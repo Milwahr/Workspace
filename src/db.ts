@@ -2,9 +2,7 @@ export type Attachment = {
   id: string
   name: string
   type: string
-  blob?: Blob
-  storagePath?: string
-  url?: string
+  blob: Blob
 }
 
 export type JournalEntry = {
@@ -16,7 +14,6 @@ export type JournalEntry = {
   attachments: Attachment[]
   createdAt: number
   updatedAt: number
-  ownerId?: string
 }
 
 const databaseName = 'stone-and-story'
